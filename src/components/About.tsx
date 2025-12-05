@@ -47,9 +47,14 @@ const About = () => {
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-secondary border-2 border-primary/30 flex items-center justify-center">
-                    <span className="font-mono text-4xl md:text-5xl text-primary font-bold">
+                    {/*<span className="font-mono text-4xl md:text-5xl text-primary font-bold">
                       HL
-                    </span>
+                    </span>*/}
+                    <img
+                      className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto"
+                      src="/profile.jpeg"
+                      alt="Profile Picture"
+                    />
                   </div>
                   <p className="mt-4 font-mono text-sm text-muted-foreground">
                     Full-Stack Developer
