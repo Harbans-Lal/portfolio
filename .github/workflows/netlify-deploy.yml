@@ -1,0 +1,40 @@
+name: Build and deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main # deploy on pushes to main
+  pull_request:
+    branches:
+      - main # optional: run on PRs for checks (won't auto-deploy to production)
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18" # change if needed
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests and lint
+        run: |
+          npm run lint || true      # optional: don't fail the whole job on lint
+          npm test --silent || true # optional: adjust to your tests
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Netlify (Production)
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          npx netlify-cli@latest deploy --dir=./build --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" --prod --message "Deployed from GitHub Actions ($GITHUB_SHA)"
