@@ -16,6 +16,7 @@ const skills = [
   { name: "Redux-toolkit", level: "Advanced" },
   { name: "Fluent-Ui", level: "Intermediate" },
   { name: "Material-Ui", level: "Intermediate" },
+  { name: "Python", level: "Intermediate" },
 ];
 
 const Skills = () => {

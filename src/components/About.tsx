@@ -10,10 +10,11 @@ const About = () => {
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Hello! I'm Harbans, a passionate full-stack web developer who
-                enjoys creating things that live on the internet. My interest in
+                enjoys creating things that live on the internet.
+                 {/* My interest in
                 web development started back when I decided to build my first
                 website — turns out hacking together a custom layout taught me a
-                lot about HTML & CSS!
+                lot about HTML & CSS! */}
               </p>
               <p>
                 Fast-forward to today, I've had the privilege of working on
