@@ -2,7 +2,17 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 
 const featuredProjects = [
   {
+    title: "URL Shorten",
+    shortName:"US",
+    description:"Drop a long messy URL and get a clean, optimized LinkFlux link instantly. No friction, no delay — just fast and reliable shortening every single time."  ,
+    tech: ["React", "Typescript","Redux-toolkit","expressJS" ,"mongodb"],
+    github: "https://github.com/Harbans-Lal/url-shorten-frontend",
+    live: "https://linkflux.netlify.app/",
+    image: null,
+  },
+   {
     title: "Favicon Generator",
+    shortName:"FG",
     description:
       "Create and export high-quality favicons in various styles and formats. Generate up to 1000 icons dynamically and download them instantly.",
     tech: ["React", "Node.js", "Typescript"],
@@ -64,7 +74,7 @@ const Projects = () => {
                     <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
                     <div className="text-center p-8">
                       <span className="font-mono text-6xl text-primary/30 font-bold">
-                        FG
+                        {project.shortName}
                       </span>
                       <p className="font-mono text-primary mt-4">
                         Featured Project
