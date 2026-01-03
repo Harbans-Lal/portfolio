@@ -53,7 +53,7 @@ const About = () => {
                     </span>*/}
                     <img
                       className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto"
-                      src="/harbans-photo.jpeg"
+                      src="/photo-harbans.jpeg"
                       alt="Profile Picture"
                     />
                   </div>
