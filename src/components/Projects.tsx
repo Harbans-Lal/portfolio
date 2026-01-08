@@ -2,17 +2,28 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 
 const featuredProjects = [
   {
+    title: "Resume Builder",
+    shortName: "RB",
+    description:
+      "Created a web-based resume builder enabling users to generate ATS-friendly resumes and export them instantly as PDFs",
+    tech: ["React", "Typescript", "Redux-toolkit", "expressJS", "mongodb"],
+    github: "https://github.com/Harbans-Lal/my-resume-builder-frontend",
+    live: "https://myresume-henna.vercel.app/",
+    image: null,
+  },
+  {
     title: "URL Shorten",
-    shortName:"US",
-    description:"Drop a long messy URL and get a clean, optimized LinkFlux link instantly. No friction, no delay — just fast and reliable shortening every single time."  ,
-    tech: ["React", "Typescript","Redux-toolkit","expressJS" ,"mongodb"],
+    shortName: "US",
+    description:
+      "Drop a long messy URL and get a clean, optimized LinkFlux link instantly. No friction, no delay — just fast and reliable shortening every single time.",
+    tech: ["React", "Typescript", "Redux-toolkit", "expressJS", "mongodb"],
     github: "https://github.com/Harbans-Lal/url-shorten-frontend",
     live: "https://linkflux.netlify.app/",
     image: null,
   },
-   {
+  {
     title: "Favicon Generator",
-    shortName:"FG",
+    shortName: "FG",
     description:
       "Create and export high-quality favicons in various styles and formats. Generate up to 1000 icons dynamically and download them instantly.",
     tech: ["React", "Node.js", "Typescript"],
@@ -68,7 +79,9 @@ const Projects = () => {
               <div className="grid md:grid-cols-12 items-center gap-4">
                 {/* Project Image/Visual */}
                 <div
-                  className={`md:col-span-7 ${index % 2 === 0 ? "" : "md:order-2"}`}
+                  className={`md:col-span-7 ${
+                    index % 2 === 0 ? "" : "md:order-2"
+                  }`}
                 >
                   <div className="relative group rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 aspect-video flex items-center justify-center">
                     <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
@@ -85,7 +98,9 @@ const Projects = () => {
 
                 {/* Project Info */}
                 <div
-                  className={`md:col-span-5 ${index % 2 === 0 ? "md:text-right" : ""}`}
+                  className={`md:col-span-5 ${
+                    index % 2 === 0 ? "md:text-right" : ""
+                  }`}
                 >
                   <p className="font-mono text-primary text-sm mb-2">
                     Featured Project
@@ -97,7 +112,9 @@ const Projects = () => {
                     </p>
                   </div>
                   <div
-                    className={`flex flex-wrap gap-2 mb-4 ${index % 2 === 0 ? "justify-end" : ""}`}
+                    className={`flex flex-wrap gap-2 mb-4 ${
+                      index % 2 === 0 ? "justify-end" : ""
+                    }`}
                   >
                     {project.tech.map((tech) => (
                       <span
@@ -109,7 +126,9 @@ const Projects = () => {
                     ))}
                   </div>
                   <div
-                    className={`flex gap-4 ${index % 2 === 0 ? "justify-end" : ""}`}
+                    className={`flex gap-4 ${
+                      index % 2 === 0 ? "justify-end" : ""
+                    }`}
                   >
                     {project.github && (
                       <a
