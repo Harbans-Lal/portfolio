@@ -21,16 +21,6 @@ const featuredProjects = [
     live: "https://linkflux.netlify.app/",
     image: null,
   },
-  {
-    title: "Favicon Generator",
-    shortName: "FG",
-    description:
-      "Create and export high-quality favicons in various styles and formats. Generate up to 1000 icons dynamically and download them instantly.",
-    tech: ["React", "Node.js", "Typescript"],
-    github: "https://github.com/Harbans-Lal/favicon-generator",
-    live: "https://favicon-factory.netlify.app/",
-    image: null,
-  },
 ];
 
 const otherProjects = [
@@ -57,6 +47,16 @@ const otherProjects = [
     tech: ["React", "Node.js", "MongoDB"],
     github: "https://github.com/Harbans-Lal/ToDoList_with_mongoose",
     live: null,
+  },
+  {
+    title: "Favicon Generator",
+    shortName: "FG",
+    description:
+      "Create and export high-quality favicons in various styles and formats. Generate up to 1000 icons dynamically and download them instantly.",
+    tech: ["React", "Node.js", "Typescript"],
+    github: "https://github.com/Harbans-Lal/favicon-generator",
+    live: "https://favicon-factory.netlify.app/",
+    image: null,
   },
 ];
 
