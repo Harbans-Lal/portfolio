@@ -18,6 +18,8 @@ const skills = [
   { name: "Material-Ui", level: "Intermediate" },
   { name: "Python", level: "Intermediate" },
   { name: "Mongodb", level: "Intermediate" },
+  { name: "SQL", level: "Intermediate" },
+  { name: "PostgreSQL", level: "Intermediate" },
 ];
 
 const Skills = () => {

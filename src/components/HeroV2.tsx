@@ -86,7 +86,7 @@ const HeroSection = () => {
           </Button>
           <Button variant="heroPrimary" size="lg" className="min-w-[180px]">
             <Download className="mr-2" size={18} />
-            <a href="/CV.pdf" download>
+            <a href="/harbansMResume.pdf" download>
               Download CV
             </a>
           </Button>
